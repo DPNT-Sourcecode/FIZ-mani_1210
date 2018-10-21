@@ -55,8 +55,8 @@ public class FizzBuzzSolution {
             return numberAsString;
         }
 
-        if (divisibleBy3(number) && contains3(numberAsString) &&
-                divisibleBy5(number) && contains5(numberAsString)) {
+        if ((divisibleBy3(number) || contains3(numberAsString)) &&
+                (divisibleBy5(number) || contains5(numberAsString))) {
             return isOdd(number) ? "fizz buzz fake deluxe" : "fizz buzz deluxe";
         }
 
